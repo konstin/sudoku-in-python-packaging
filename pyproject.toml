@@ -1,0 +1,6 @@
+[project]
+name = "sudoko-in-python-packaging"
+version = "0.1.0"
+readme = "Readme.md"
+requires-python = ">=3.12"
+dependencies = []
