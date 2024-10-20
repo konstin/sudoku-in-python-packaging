@@ -107,10 +107,10 @@ Resolved 81 packages in 126ms
 ## Benchmark
 
 ```
-hyperfine --warmup 5 "uv pip compile --find-links packages/ --no-annotate --no-header requirements.in"
-Benchmark 1: uv pip compile --find-links packages/ --no-annotate --no-header requirements.in
-  Time (mean ± σ):     126.9 ms ±   7.8 ms    [User: 39.4 ms, System: 26.0 ms]
-  Range (min … max):   115.3 ms … 150.5 ms    23 runs
+$ hyperfine --warmup 5 "uv pip compile --find-links packages/ --no-index --no-annotate --no-header requirements.in"
+Benchmark 1: uv pip compile --find-links packages/ --no-index --no-annotate --no-header requirements.in
+  Time (mean ± σ):      29.7 ms ±   1.6 ms    [User: 29.9 ms, System: 21.0 ms]
+  Range (min … max):    27.5 ms …  35.0 ms    97 runs
 ```
 
 The walltime didn't vary much between the sudokus i tried.
