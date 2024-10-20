@@ -5,7 +5,7 @@ Solve sudokus not in python, but in python packages.
 Solving the versions of python package from your requirements is [NP-complete](https://research.swtch.com/version-sat), in the worst case it runs exponentially slow. Sudokus are also [NP-complete](http://mountainvistasoft.com/docs/ASP.pdf), which means we can solve sudokus with python packaging.
 
 Each cell in the sudoku grid is a package
-`sudoku_{x}_{y}` (0 indexed), and the version (1-9) is the value in the field, so you can write a pyproject.toml and the installed packages
+`sudoku_{x}_{y}` (0 indexed), and the version (1-9) is the value in the field, so you can write a pyproject.toml and the installed packages are the solution.
 
 ```toml
 [project]
